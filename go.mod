@@ -1,4 +1,4 @@
-module pack
+module try
 
 go 1.20
 
