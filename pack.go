@@ -1,8 +1,6 @@
-package main
+package pack
 
 import (
-	"fmt"
-
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -78,24 +76,25 @@ func (a *Admins) GetAll() ([]User, error) {
 	return users, nil
 
 }
-func main() {
-	users := User{
-		Id:       1,
-		Name:     "fajar",
-		Password: "fajaraj",
-	}
 
-	users2 := User{
-		Id:       1,
-		Name:     "fajar",
-		Password: "fajaraj",
-	}
-	var admin Admins
-	var dats Linkliest = &admin
-	dats.Add(users)
-	dats.Add(users2)
+// func main() {
+// 	users := User{
+// 		Id:       1,
+// 		Name:     "fajar",
+// 		Password: "fajaraj",
+// 	}
 
-	data, _ := dats.GetAll()
-	fmt.Print(data)
+// 	users2 := User{
+// 		Id:       1,
+// 		Name:     "fajar",
+// 		Password: "fajaraj",
+// 	}
+// 	var admin Admins
+// 	var dats Linkliest = &admin
+// 	dats.Add(users)
+// 	dats.Add(users2)
 
-}
+// 	data, _ := dats.GetAll()
+// 	fmt.Print(data)
+
+// }
